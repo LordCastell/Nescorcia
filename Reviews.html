@@ -1,0 +1,123 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Sección de Reseñas - Mascotas Amigables</title>
+    <style>
+        /* Estilos generales */
+        body {
+            font-family: Arial, sans-serif;
+            margin: 0;
+            padding: 0;
+            background-image: url('https://pulgososesteticacanina.com.mx/wp-content/uploads/2022/01/Baño-para-gatos-a-domicilio-2.jpg'); /* Fondo de la página */
+            background-size: cover;
+            background-position: center;
+            background-attachment: fixed;
+        }
+
+        /* Banner superior con el logo */
+        .banner {
+            background: rgba(255, 255, 255, 0.8); /* Fondo blanco traslúcido */
+            text-align: center;
+            padding: 20px;
+        }
+        .banner img {
+            max-width: 300px; /* Ajusta el tamaño del logo */
+        }
+
+        /* Contenedor principal de reseñas */
+        .contenedor-reseñas {
+            max-width: 1200px;
+            margin: 40px auto;
+            padding: 20px;
+        }
+
+        /* Estilos de cada reseña */
+        .bloque-resena {
+            display: flex;
+            align-items: center;
+            justify-content: space-between;
+            background-color: rgba(223, 246, 226, 0.85); /* Verde menta traslúcido */
+            border-radius: 10px;
+            padding: 20px;
+            box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+            margin-bottom: 20px;
+        }
+
+        /* Alternar orden de los bloques */
+        .bloque-resena:nth-child(even) {
+            flex-direction: row-reverse; /* La segunda reseña tendrá la imagen a la izquierda */
+        }
+
+        /* Imagen de las mascotas */
+        .imagen-mascota {
+            border-radius: 10px;
+            width: 300px; /* Ajusta el tamaño de las imágenes */
+            height: auto;
+            object-fit: cover;
+            margin: 20px;
+            box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2);
+        }
+
+        /* Estilos del contenido de la reseña */
+        .contenido-resena {
+            max-width: 600px;
+        }
+        .contenido-resena h2 {
+            font-size: 28px;
+            margin-bottom: 10px;
+            color: #2C6E49; /* Verde oscuro */
+        }
+        .contenido-resena p {
+            margin: 10px 0;
+            text-align: justify;
+            font-size: 16px;
+        }
+
+        /* Media queries para hacerlo responsive */
+        @media (max-width: 768px) {
+            .bloque-resena {
+                flex-direction: column;
+                text-align: center;
+            }
+            .imagen-mascota {
+                width: 100%;
+                max-width: 400px;
+            }
+        }
+    </style>
+</head>
+<body>
+
+    <!-- Banner con el logo -->
+    <header class="banner">
+        <img src="IMAGENES/LogoMascotasAmigables.jpg" alt="Logo Mascotas Amigables">
+    </header>
+
+    <section class="contenedor-reseñas">
+        <!-- Reseña de Roky -->
+        <div class="bloque-resena">
+            <div class="contenido-resena">
+                <h2>Roky</h2>
+                <p>¡No puedo estar más feliz con el servicio en Mascotas Amigables! Desde que llegamos, Roky fue recibido con mucha calidez y profesionalismo. Se notaba lo cómodo y relajado que estaba gracias al cariño con el que lo trataron.</p>
+                <p>El baño fue espectacular: usaron productos de excelente calidad que dejaron su pelaje súper brillante, suave y con un aroma delicioso. Además, cuidaron cada detalle, desde la limpieza de sus orejas hasta el corte de uñas, todo con mucha paciencia y amor.</p>
+                <p>Roky salió feliz, moviendo la cola y con una energía increíble. Sin duda, Mascotas Amigables se ha convertido en nuestro lugar de confianza. ¡Gracias por hacer que Roky luzca tan hermoso y se sienta tan bien!</p>
+            </div>
+            <img src="IMAGENES/Roky.jpg" alt="Roky" class="imagen-mascota">
+        </div>
+
+        <!-- Reseña de Buti -->
+        <div class="bloque-resena">
+            <img src="IMAGENES/Buti.jpg" alt="Buti" class="imagen-mascota">
+            <div class="contenido-resena">
+                <h2>Buti</h2>
+                <p>Llevar a Buti a un salón de belleza siempre ha sido un desafío, pero en Mascotas Amigables lograron que la experiencia fuera completamente diferente. Desde el primer momento, el equipo mostró una paciencia y un cariño excepcionales.</p>
+                <p>El baño fue realizado con delicadeza, usando productos de excelente calidad que dejaron su pelaje sedoso y con un aroma muy agradable. Además, le desenredaron su pelo sin molestarlo y le cortaron las uñas con mucha suavidad.</p>
+                <p>Estoy muy agradecido con Mascotas Amigables por su dedicación y profesionalismo. Es difícil encontrar un lugar que realmente entienda a los gatos, pero aquí lo lograron. ¡Gracias por hacer que Buti luzca y se sienta espectacular!</p>
+            </div>
+        </div>
+    </section>
+
+</body>
+</html>
