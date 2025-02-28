@@ -1,0 +1,127 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>MusictoWork</title>
+    <style>
+        body {
+            font-family: Arial, sans-serif;
+            background-color: #f2f2f2;
+        }
+        .container {
+            max-width: 800px;
+            margin: 40px auto;
+            padding: 20px;
+            background-color: #fff;
+            border: 1px solid #ddd;
+            box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+        }
+        .header {
+            background-color: #333;
+            color: #fff;
+            padding: 10px;
+            text-align: center;
+        }
+        .header h1 {
+            margin: 0;
+        }
+        .music-list {
+            list-style: none;
+            padding: 0;
+            margin: 0;
+        }
+        .music-list li {
+            padding: 10px;
+            border-bottom: 1px solid #ccc;
+        }
+        .music-list li:last-child {
+            border-bottom: none;
+        }
+        .description-box {
+            margin: 20px;
+            padding: 20px;
+            border: 1px solid #ccc;
+            background-color: #f9f9f9;
+        }
+        .description-box h2 {
+            margin: 0;
+        }
+        .select-group {
+            margin: 20px;
+        }
+        .select-group select {
+            width: 100%;
+            height: 40px;
+            padding: 10px;
+            border: 1px solid #ccc;
+        }
+        .contact-form {
+            margin: 20px;
+        }
+        .contact-form input, .contact-form textarea {
+            width: 100%;
+            padding: 10px;
+            margin: 10px 0;
+            border: 1px solid #ccc;
+        }
+        .contact-form input[type="submit"] {
+            background-color: #333;
+            color: #fff;
+            padding: 10px 20px;
+            border: none;
+            border-radius: 5px;
+            cursor: pointer;
+        }
+    </style>
+</head>
+<body>
+    <div class="container">
+        <div class="header">
+            <h1>MusictoWork</h1>
+        </div>
+        <h2>Listado de músicas para trabajar</h2>
+        <ul class="music-list">
+            <li>Rock suave</li>
+            <li>Rock clásico</li>
+            <li>Pop romántico</li>
+            <li>Baladas</li>
+        </ul>
+        <div class="description-box">
+            <h2>Rock suave</h2>
+            <p>El rock suave es un género musical que se caracteriza por su sonido relajante y emotivo. Es perfecto para trabajar en proyectos que requieren concentración y creatividad.</p>
+        </div>
+        <div class="description-box">
+            <h2>Rock clásico</h2>
+            <p>El rock clásico es un género musical que se originó en la década de 1950 y se caracteriza por su sonido enérgico y rebelde. Es perfecto para trabajar en proyectos que requieren energía y motivación.</p>
+        </div>
+        <div class="description-box">
+            <h2>Pop romántico</h2>
+            <p>El pop romántico es un género musical que se caracteriza por su sonido suave y emotivo. Es perfecto para trabajar en proyectos que requieren sentimiento y pasión.</p>
+        </div>
+        <div class="description-box">
+            <h2>Baladas</h2>
+            <p>Las baladas son un género musical que se caracteriza por su sonido lento y emotivo. Es perfecto para trabajar en proyectos que requieren reflexión y contemplación.</p>
+        </div>
+        <div class="select-group">
+            <label>Selecciona un grupo:</label>
+            <select>
+                <option>Grupo 1</option>
+                <option>Grupo 2</option>
+                <option>Grupo 3</option>
+                <option>Grupo 4</option>
+            </select>
+        </div>
+        <div class="contact-form">
+            <h2>Contáctanos</h2>
+            <label>Nombre:</label>
+            <input type="text" name="nombre" required>
+            <label>Correo:</label>
+            <input type="email" name="correo" required>
+            <label>Mensaje:</label>
+            <textarea name="mensaje" required></textarea>
+            <input type="submit" value="Enviar">
+        </div>
+    </div>
+</body>
+</html>
